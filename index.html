@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Pramrm Account</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      padding: 0;
+      background-color: #101010;
+    }
+
+    .loader {
+      border: 16px solid #f3f3f3; /* لون الحدود الخارجية */
+      border-top: 16px solid #db3434; /* لون الحدود العلوية */
+      border-radius: 50%;
+      width: 120px;
+      height: 120px;
+      animation: spin 2s linear infinite;
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+    
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+    }
+
+    header .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    header nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    header nav ul li {
+      margin: 0 10px;
+    }
+
+    header nav ul li a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    @media only screen and (max-width: 768px) {
+      /* تخطيط الهواتف المحمولة */
+      header {
+        padding: 10px;
+      }
+
+      header .logo {
+        font-size: 20px;
+      }
+
+      header nav ul li {
+        margin: 5px 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">Logo</div>
+    <nav>
+      <ul>
+        <li><a href="#">الرئيسية</a></li>
+        <li><a href="#">من نحن</a></li>
+        <li><a href="#">خدماتنا</a></li>
+        <li><a href="#">اتصل بنا</a></li>
+      </ul>
+    </nav>
+  </header>
+    
+  <div class="loader"></div>
+</body>
+</html>
