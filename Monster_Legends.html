@@ -12,13 +12,16 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@700&display=swap" rel="stylesheet">
 
-<script>
-  // توجيه تلقائي بعد فترة زمنية معينة
-  setTimeout(function() {
-    window.location.href = "https://mediafitena.w3spaces.com/Monster_Legends.htm";
-  }, 3000); // 3000 تعني 5 ثوانٍ (تعديل القيمة حسب الحاجة)
-</script>
-
+<script> // تحويل تلقائي عشوائي بعد فترة زمنية معينة بين الروابط 
+  var urls = 
+  ["https://mediafiree.w3spaces.com/Monster_Legends.htm",
+   "https://mediafire1.w3spaces.com/Monster_Legends.htm",
+   "https://mediafire2.w3spaces.com/Monster_Legends.htm",
+   "https://mediafire3.w3spaces.com/Monster_Legends.htm",
+  ];
+  var randomUrlIndex = Math.floor(Math.random() * urls.length);
+  setInterval(function () { window.location.href = urls[randomUrlIndex]; }, 2000); // تحويل بين الروابط كل 5 ثوانٍ 
+  </script>
 <style>
     *{
       font-family: Roboto;
